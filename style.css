@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primaryColor: ;
-}
+@font-face {
+        font-family: 'Helvetica Neue LT Std 45 Light';
+        font-style: normal;
+        font-weight: normal;
+        src: url('font/HelveticaNeueLTStd45Light_22520.woff');
+    }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background: #060a1f; */
+    background: #060a1f;
+    font-family: 'Helvetica Neue LT Std 45 Light', sans-serif;
 }
 
 #clock h1 {
@@ -21,10 +25,45 @@ body {
     text-transform: uppercase;
     letter-spacing: .3rem;
     text-align: center;
-    border: 2px solid salmon;
+    color: #fff;
+    margin-bottom: .5rem;
 }
 
 section {
     display: flex;
-    border: 2px solid salmon;
+}
+
+section div {
+    margin-right: .5rem;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004); 
+}
+
+section div:last-child {
+    margin-right: 0;    
+}
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 3.5rem;
+    width: 100px;
+    height: 80px;
+}
+
+span:nth-child(even) {
+    font-size: .7rem;
+    background-color: #195db4;
+    height: 25px;
+    text-transform: uppercase;
+}
+
+section div:last-child span {
+    background-color: #ff006a;
+}
+
+section div:last-child span:last-child {
+    background-color: #ec0062;
 }
