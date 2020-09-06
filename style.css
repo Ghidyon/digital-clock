@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: ;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #060a1f; */
+}
+
+#clock h1 {
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-align: center;
+    border: 2px solid salmon;
+}
+
+section {
+    display: flex;
+    border: 2px solid salmon;
+}
