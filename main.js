@@ -3,9 +3,13 @@ const clock = () => {
     const minutes = document.querySelector('#minutes');
     const seconds = document.querySelector('#seconds');
 
-    const hr = new Date().getHours();
-    const min = new Date().getMinutes();
-    const sec = new Date().getSeconds();
+    let hr = new Date().getHours();
+    let min = new Date().getMinutes();
+    let sec = new Date().getSeconds();
+
+    hr = (hr < 10) ? `0${hr}` : hr;
+    min = (min < 10) ? `0${min}` : min;
+    sec = (sec < 10) ? `0${sec}` : sec;
 
     hour.innerHTML = hr;
     minutes.innerHTML = min;
