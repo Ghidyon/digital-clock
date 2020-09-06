@@ -50,7 +50,7 @@ span {
     color: #fff;
     font-size: 3.3rem;
     width: 100px;
-    height: 85px;
+    padding: .7rem 0;
 }
 
 span:nth-child(even) {
