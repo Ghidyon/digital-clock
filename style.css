@@ -52,7 +52,7 @@ span {
     color: #fff;
     font-size: 3.3rem;
     width: 100px;
-    padding: .7rem 0;
+    padding: 1rem 0 .5rem 0;
 }
 
 span:nth-child(even) {
@@ -71,6 +71,8 @@ section div:last-child span:last-child {
     background-color: #ec0062;
 }
 
-@media screen and (min-width: 768px) {
-
+@media screen and (min-width: 567px) {
+    span {
+        padding: .7rem 0;
+    }
 }
