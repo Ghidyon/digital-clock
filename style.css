@@ -34,6 +34,7 @@ section {
 }
 
 section div {
+    position: relative;
     margin-right: .5rem;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
@@ -43,6 +44,7 @@ section div:last-child {
 }
 
 span {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,10 +57,10 @@ span {
 
 span:nth-child(even) {
     font-size: .7rem;
-    background-color: #1d65c4;
-    height: 30px;
+    background-color: #1d65c4;    
     text-transform: uppercase;
     letter-spacing: 2.5px;
+    padding: .5rem 0;
 }
 
 section div:last-child span {
@@ -67,4 +69,8 @@ section div:last-child span {
 
 section div:last-child span:last-child {
     background-color: #ec0062;
+}
+
+@media screen and (min-width: 768px) {
+
 }
