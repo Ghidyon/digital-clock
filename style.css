@@ -35,7 +35,7 @@ section {
 
 section div {
     margin-right: .5rem;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004); 
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 
 section div:last-child {
@@ -48,16 +48,17 @@ span {
     justify-content: center;
     background-color: #1a73e8;
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     width: 100px;
-    height: 80px;
+    height: 85px;
 }
 
 span:nth-child(even) {
     font-size: .7rem;
-    background-color: #195db4;
-    height: 25px;
+    background-color: #1d65c4;
+    height: 30px;
     text-transform: uppercase;
+    letter-spacing: 2.5px;
 }
 
 section div:last-child span {
