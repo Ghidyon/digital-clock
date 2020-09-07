@@ -20,6 +20,13 @@ body {
     font-family: 'Helvetica Neue LT Std 45 Light', sans-serif;
 }
 
+#clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #clock h1 {
     font-size: .8rem;
     text-transform: uppercase;
@@ -52,7 +59,7 @@ section div:last-child {
     right: 0;
     transform-origin: bottom;
     transform: scaleY(-1);
-    opacity: .4;
+    mask: url(#fader);
 }
 
 .hour-box::after {

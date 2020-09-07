@@ -25,6 +25,15 @@
                 <span>Seconds</span>
             </div>
         </section>
+        <svg>
+            <linearGradient id="gradient" x2="0%" y1="100%">
+                <stop offset="0" stop-color="#fff" stop-opacity=".5"></stop>
+                <stop offset="1" stop-color="#0000" stop-opacity="1"></stop>
+            </linearGradient>
+            <mask id="fader" maskContentUnits="objectBoundingBox">
+                <rect width="1" height="1" fill="url(#gradient)"></rect>
+            </mask>
+        </svg>
     </div>
 
     <script src="main.js"></script>
