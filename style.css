@@ -36,11 +36,34 @@ section {
 section div {
     position: relative;
     margin-right: .5rem;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    -webkit-box-reflect: below .5px linear-gradient(transparent, #0004);
 }
 
 section div:last-child {
     margin-right: 0;    
+}
+
+.hour-box::after, .minutes-box::after, .seconds-box::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom;
+    transform: scaleY(-1);
+}
+
+.hour-box::after {
+    background: -moz-element(#get-hour);
+}
+
+.minutes-box::after {
+    background: -moz-element(#get-minutes);
+}
+
+.seconds-box::after {
+    background: -moz-element(#get-seconds);
 }
 
 span {
