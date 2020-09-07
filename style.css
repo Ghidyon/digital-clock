@@ -52,6 +52,7 @@ section div:last-child {
     right: 0;
     transform-origin: bottom;
     transform: scaleY(-1);
+    opacity: .4;
 }
 
 .hour-box::after {
