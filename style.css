@@ -104,6 +104,6 @@ section div:last-child span:last-child {
 
 @media screen and (min-width: 567px) {
     span {
-        padding: .7rem 0;
+        padding: 1.1rem 0 .2rem 0;
     }
 }
